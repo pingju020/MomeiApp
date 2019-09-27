@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIApplication">
+            <connections>
+                <outlet property="delegate" destination="kqo-ew-jqe" id="nb9-Ku-Fo1"/>
+            </connections>
+        </placeholder>
+        <customObject id="kqo-ew-jqe" customClass="AppDelegate">
+            <connections>
+                <outlet property="tabBarViewController" destination="r3v-1X-H8v" id="HPr-yB-iBN"/>
+                <outlet property="window" destination="JJG-Bh-5RY" id="hXw-Vc-HPI"/>
+            </connections>
+        </customObject>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <window contentMode="scaleToFill" visibleAtLaunch="YES" id="JJG-Bh-5RY">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="GS7-WM-mia"/>
+            <point key="canvasLocation" x="-593" y="102"/>
+        </window>
+        <tabBarController id="r3v-1X-H8v">
+            <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Utl-9o-9Fp">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            </tabBar>
+            <viewControllers>
+                <navigationController id="nw7-aL-b9n" userLabel="首页">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="ShiJianB.png" selectedImage="ShiJian.png" id="LRM-ZR-65S" userLabel="首页"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translucent="NO" backIndicatorTransitionMaskImage="Default.png" id="GbL-ym-x7M">
+                        <rect key="frame" x="0.0" y="-44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.11818377670000001" green="0.1203609556" blue="0.39863494040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController nibName="MainHomeViewController" id="we2-W6-Om9" userLabel="首页" customClass="MainHomeViewController">
+                            <extendedEdge key="edgesForExtendedLayout"/>
+                            <navigationItem key="navigationItem" title="首页" id="VmS-KZ-QAE"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController id="QqJ-GP-TrI" userLabel="消息">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="消息" image="WoDeB.png" id="JH1-Ex-hUg"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="r0S-V3-bJx">
+                        <rect key="frame" x="0.0" y="-44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.11818377670000001" green="0.1203609556" blue="0.39863494040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController nibName="MessagesViewController" id="ob4-uG-npo" customClass="MessagesViewController">
+                            <extendedEdge key="edgesForExtendedLayout"/>
+                            <navigationItem key="navigationItem" title="消息" id="7rX-tV-QQT"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController title="短消息" id="kRz-Ug-qEA" userLabel="购物车">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="购物车" image="LianXiRengB.png" selectedImage="LianXiRengA.png" id="U7A-zY-xov"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="black" id="ya0-G5-aMd">
+                        <rect key="frame" x="0.0" y="-44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.37647058820000001" green="0.82352941180000006" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.11818377670000001" green="0.1203609556" blue="0.39863494040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController title="购物车" nibName="CartsViewController" id="LZD-tv-4DY" customClass="CartsViewController">
+                            <extendedEdge key="edgesForExtendedLayout"/>
+                            <navigationItem key="navigationItem" title="购物车" id="DXg-zV-VLg"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController title="我的" id="tFx-f6-KhL" userLabel="订单">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="订单" image="XiaoxiB.png" selectedImage="XiaoxiA.png" id="lZr-B3-HLM"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translucent="NO" id="beh-PH-4TF">
+                        <rect key="frame" x="0.0" y="-44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.37647058820000001" green="0.82352941180000006" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.11818377670000001" green="0.1203609556" blue="0.39863494040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController title="订单" nibName="OrdersViewController" automaticallyAdjustsScrollViewInsets="NO" id="sTT-xZ-49o" customClass="OrdersViewController">
+                            <extendedEdge key="edgesForExtendedLayout"/>
+                            <navigationItem key="navigationItem" title="我" id="HWP-nI-oDG"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController title="我的" id="wq7-r8-gpZ">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="我" image="XiaoxiB.png" selectedImage="XiaoxiA.png" id="PU4-If-Txi"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translucent="NO" id="Q8u-O6-5LS">
+                        <rect key="frame" x="0.0" y="-44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.37647058820000001" green="0.82352941180000006" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.11818377670000001" green="0.1203609556" blue="0.39863494040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController title="我的" nibName="ProfileViewController" automaticallyAdjustsScrollViewInsets="NO" id="ig5-7z-nm9" customClass="ProfileViewController">
+                            <extendedEdge key="edgesForExtendedLayout"/>
+                            <navigationItem key="navigationItem" title="我" id="m40-g0-Eam"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+            </viewControllers>
+            <connections>
+                <outlet property="delegate" destination="kqo-ew-jqe" id="CcA-ba-dIZ"/>
+            </connections>
+        </tabBarController>
+    </objects>
+    <resources>
+        <image name="Default.png" width="16" height="16"/>
+        <image name="LianXiRengA.png" width="24" height="17"/>
+        <image name="LianXiRengB.png" width="24" height="17"/>
+        <image name="ShiJian.png" width="17" height="17"/>
+        <image name="ShiJianB.png" width="17" height="17"/>
+        <image name="WoDeB.png" width="21" height="17"/>
+        <image name="XiaoxiA.png" width="17" height="17"/>
+        <image name="XiaoxiB.png" width="17" height="17"/>
+    </resources>
+</document>
